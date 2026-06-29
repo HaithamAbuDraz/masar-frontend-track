@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task3</title>
+</head>
+
+<body>
+  <h2>Update Profile</h2>
+
+  <!-- 
+    1) action="http://www.example.com/update_profile" 
+    2) method="POST" (most secure for sensitive data)
+  -->
+
+  <form action="http://www.example.com/update_profile/" method="POST">
+
+    <div>
+      <label for="user_password">Password:</label>
+      <input type="password" id="user_password" name="user_password" maxlength="15" required>
+    </div>
+
+    <br>
+
+    <fieldset>
+      <legend>Favorite Languages</legend>
+
+      <label>
+        <input type="checkbox" name="languages[]" value="HTML"> HTML
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="languages[]" value="CSS"> CSS
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="languages[]" value="JavaScript"> JavaScript
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="languages[]" value="React"> React
+      </label>
+    </fieldset>
+
+    <br>
+
+    <div>
+      <button type="submit" name="update">Update Profile</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
